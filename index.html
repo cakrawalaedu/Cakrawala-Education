@@ -11,10 +11,13 @@
         nav a { color: white; margin: 0 15px; text-decoration: none; }
         .hero { text-align: center; padding: 50px; background: url('A_scenic_view_of_a_New_Zealand_university_campus_w.png') no-repeat center; background-size: cover; color: white; }
         .container { padding: 20px; text-align: center; }
-        .button { background: #0055A4; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
+        .button { background: #0055A4; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; }
         .footer { background: #003366; color: white; text-align: center; padding: 10px; margin-top: 20px; }
         .image-container { text-align: center; margin: 20px 0; }
         .image-container img { width: 80%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
+        form { display: flex; flex-direction: column; align-items: center; }
+        input, textarea { width: 80%; padding: 10px; margin: 5px 0; border: 1px solid #ccc; border-radius: 5px; }
+        button { background: #0055A4; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
     </style>
 </head>
 <body>
@@ -37,7 +40,7 @@
     
     <section class="container" id="about">
         <h2>Tentang Kami</h2>
-        <p>Kami adalah Cakrawala Education Agency, agensi pendidikan yang membantu siswa Indonesia menemukan peluang belajar di universitas terbaik di Selandia Baru.</p>
+        <p>Cakrawala Education Agency adalah mitra terpercaya bagi pelajar Indonesia yang ingin melanjutkan pendidikan ke Selandia Baru. Kami menyediakan layanan konsultasi, bimbingan akademik, serta bantuan dalam proses aplikasi hingga keberangkatan. Dengan pengalaman dan koneksi yang kuat dengan institusi pendidikan terbaik di Selandia Baru, kami berkomitmen untuk membantu Anda meraih impian akademik dan profesional.</p>
         <div class="image-container">
             <img src="A_highly_realistic_image_of_a_New_Zealand_universi.png" alt="Pemandangan Kampus di Selandia Baru">
         </div>
@@ -50,7 +53,15 @@
     
     <section class="container" id="contact">
         <h2>Hubungi Kami</h2>
-        <p>Email: info@cakrawalaeducation.com | WhatsApp: +62 821-5446-5074</p>
+        <p>Email: <a href="mailto:info@cakrawalaeducation.com">info@cakrawalaeducation.com</a></p>
+        <p>WhatsApp: <a href="https://wa.me/6281234567890" target="_blank">+62 812-3456-7890</a></p>
+        <h3>Formulir Konsultasi</h3>
+        <form action="#" method="POST">
+            <input type="text" name="nama" placeholder="Nama Anda" required>
+            <input type="email" name="email" placeholder="Email Anda" required>
+            <textarea name="pesan" placeholder="Pesan Anda"></textarea>
+            <button type="submit">Kirim</button>
+        </form>
     </section>
     
     <footer class="footer">
