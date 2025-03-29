@@ -67,5 +67,19 @@
     <footer class="footer">
         <p>&copy; 2025 Cakrawala Education Agency | All Rights Reserved</p>
     </footer>
+    <script>
+    document.querySelector("form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        fetch(this.action, {
+            method: this.method,
+            body: new FormData(this),
+            headers: { 'Accept': 'application/json' }
+        }).then(response => {
+            if (response.ok) {
+                window.location.href = "terima-kasih.html";
+            }
+        });
+    });
+</script>
 </body>
 </html>
