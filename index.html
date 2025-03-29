@@ -78,8 +78,11 @@
             if (response.ok) {
                 window.location.href = "terima-kasih.html";
             }
+        }).catch(error => {
+            console.error('Terjadi kesalahan:', error);
         });
     });
 </script>
+
 </body>
 </html>
