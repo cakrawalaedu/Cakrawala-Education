@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cakrawala Education Agency</title>
-    <meta name="description" content="Cakrawala Education Agency membantu pelajar Indonesia kuliah di Selandia Baru. Konsultasi gratis!">
-    <meta name="keywords" content="kuliah di Selandia Baru, agen pendidikan NZ, beasiswa NZ, konsultasi pendidikan">
-    <meta name="author" content="Cakrawala Education Agency">
+    <script src="https://kit.fontawesome.com/ae943c6289.js" crossorigin="anonymous"></script>
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
         header { background: #0055A4; color: white; text-align: center; padding: 20px; }
@@ -15,96 +13,70 @@
         .hero { text-align: center; padding: 50px; background: url('A_high-resolution_digital_photograph_captures_a_un.png') no-repeat center; background-size: cover; color: white; }
         .container { padding: 20px; text-align: center; }
         .button { background: #0055A4; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; }
-        .button:hover { background: #003366; transition: 0.3s ease; }
         .footer { background: #003366; color: white; text-align: center; padding: 10px; margin-top: 20px; }
         .image-container { text-align: center; margin: 20px 0; }
         .image-container img { width: 80%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
         form { display: flex; flex-direction: column; align-items: center; }
-        input, select, textarea { width: 80%; padding: 10px; margin: 5px 0; border: 1px solid #ccc; border-radius: 5px; }
+        input, textarea { width: 80%; padding: 10px; margin: 5px 0; border: 1px solid #ccc; border-radius: 5px; }
         button { background: #0055A4; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
-        .faq-container details { margin: 10px 0; background: #f4f4f4; padding: 10px; border-radius: 5px; }
-        .whatsapp-float { position: fixed; bottom: 20px; right: 20px; width: 50px; }
+        .social-icons { margin-top: 20px; }
+        .social-icons a { color: white; font-size: 24px; margin: 0 10px; text-decoration: none; }
     </style>
 </head>
 <body>
-
     <header>
         <h1>Cakrawala Education Agency</h1>
         <p>Raih masa depan gemilang dengan pendidikan berkualitas dunia</p>
     </header>
-
+    
     <nav>
         <a href="#about">Tentang Kami</a>
         <a href="#services">Layanan</a>
-        <a href="#faq">FAQ</a>
         <a href="#contact">Hubungi Kami</a>
     </nav>
-
+    
     <section class="hero">
         <h2>Temukan Peluang Belajar di Selandia Baru</h2>
         <p>Kami siap membantu setiap langkah perjalanan akademik Anda</p>
         <a href="#contact" class="button">Konsultasi Gratis</a>
     </section>
-
+    
     <section class="container" id="about">
         <h2>Tentang Kami</h2>
-        <p>Cakrawala Education Agency adalah mitra terpercaya bagi pelajar Indonesia yang ingin melanjutkan pendidikan ke Selandia Baru.</p>
+        <p>Cakrawala Education Agency adalah mitra terpercaya bagi pelajar Indonesia yang ingin melanjutkan pendidikan ke Selandia Baru. Kami menyediakan layanan konsultasi, bimbingan akademik, serta bantuan dalam proses aplikasi hingga keberangkatan.</p>
         <div class="image-container">
-            <img src="A_high-resolution_digital_photograph_captures_a_un.png" alt="New Zealand University">
+            <img src="A_high-resolution_digital_photograph_captures_a_un.png" alt="Kampus di Selandia Baru">
         </div>
     </section>
-
+    
     <section class="container" id="services">
         <h2>Layanan Kami</h2>
         <p>✅ Konsultasi Pendidikan | ✅ Pengurusan Visa | ✅ Bantuan Akomodasi</p>
     </section>
-
-    <section class="container" id="faq">
-        <h2>FAQ - Pertanyaan yang Sering Diajukan</h2>
-        <div class="faq-container">
-            <details>
-                <summary>Apakah konsultasi di Cakrawala Education Agency gratis?</summary>
-                <p>Ya, kami menyediakan konsultasi gratis untuk tahap awal.</p>
-            </details>
-            <details>
-                <summary>Bagaimana cara mendaftar ke universitas di Selandia Baru?</summary>
-                <p>Anda dapat mengisi formulir konsultasi, dan tim kami akan membantu Anda dalam proses pendaftaran.</p>
-            </details>
-        </div>
-    </section>
-
+    
     <section class="container" id="contact">
         <h2>Hubungi Kami</h2>
         <p>Email: <a href="mailto:info@cakrawalaeducation.com">info@cakrawalaeducation.com</a></p>
         <p>WhatsApp: <a href="https://wa.me/6281234567890" target="_blank">+62 812-3456-7890</a></p>
+        
+        <h3>Ikuti Kami</h3>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/cakrawalaeducation" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/cakrawalaeducation" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.tiktok.com/@cakrawalaeducation" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
 
         <h3>Formulir Konsultasi</h3>
         <form action="https://formspree.io/f/mjkyejdg" method="POST">
             <input type="text" name="nama" placeholder="Nama Anda" required>
             <input type="email" name="email" placeholder="Email Anda" required>
-            <select name="layanan">
-                <option value="Konsultasi Universitas">Konsultasi Universitas</option>
-                <option value="Pengurusan Visa">Pengurusan Visa</option>
-                <option value="Akomodasi & Transportasi">Akomodasi & Transportasi</option>
-            </select>
             <textarea name="pesan" placeholder="Pesan Anda"></textarea>
             <button type="submit">Kirim</button>
         </form>
     </section>
-
+    
     <footer class="footer">
         <p>&copy; 2025 Cakrawala Education Agency | All Rights Reserved</p>
-        <a href="https://instagram.com/cakrawalaedu" target="_blank">
-            <img src="images/instagram-icon.png" alt="Instagram" width="30">
-        </a>
-        <a href="https://wa.me/6281234567890" target="_blank">
-            <img src="images/whatsapp-icon.png" alt="WhatsApp" width="30">
-        </a>
     </footer>
-
-    <a href="https://wa.me/6281234567890" target="_blank" class="whatsapp-float">
-        <img src="images/whatsapp-icon.png" alt="WhatsApp">
-    </a>
-
 </body>
 </html>
