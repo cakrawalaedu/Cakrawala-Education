@@ -40,9 +40,9 @@
     
     <section class="container" id="about">
         <h2>Tentang Kami</h2>
-        <p>Cakrawala Education Agency adalah mitra terpercaya bagi pelajar Indonesia yang ingin melanjutkan pendidikan ke Selandia Baru. Kami menyediakan layanan konsultasi, bimbingan akademik, serta bantuan dalam proses aplikasi hingga keberangkatan. Dengan pengalaman dan koneksi yang kuat dengan institusi pendidikan terbaik di Selandia Baru, kami berkomitmen untuk membantu Anda meraih impian akademik dan profesional.</p>
+        <p>Cakrawala Education Agency adalah mitra terpercaya bagi pelajar Indonesia yang ingin melanjutkan pendidikan ke Selandia Baru. Kami menyediakan layanan konsultasi, bimbingan akademik, serta bantuan dalam proses aplikasi hingga keberangkatan.</p>
         <div class="image-container">
-            <img DALL·E 2025-03-28 13.03.06 - A highly realistic image of a New Zealand university campus with modern architecture, surrounded by lush green hills and a clear blue sky. Students fr.webp>
+            <img src="A_scenic_view_of_a_New_Zealand_university_campus_w.png" alt="Universitas di Selandia Baru">
         </div>
     </section>
     
@@ -55,8 +55,10 @@
         <h2>Hubungi Kami</h2>
         <p>Email: <a href="mailto:info@cakrawalaeducation.com">info@cakrawalaeducation.com</a></p>
         <p>WhatsApp: <a href="https://wa.me/6281234567890" target="_blank">+62 812-3456-7890</a></p>
+        
         <h3>Formulir Konsultasi</h3>
-        <form action="#" method="POST">
+        <form action="https://formspree.io/f/mjkyejdg" method="POST">
+            <input type="hidden" name="_next" value="terima-kasih.html">
             <input type="text" name="nama" placeholder="Nama Anda" required>
             <input type="email" name="email" placeholder="Email Anda" required>
             <textarea name="pesan" placeholder="Pesan Anda"></textarea>
@@ -67,21 +69,5 @@
     <footer class="footer">
         <p>&copy; 2025 Cakrawala Education Agency | All Rights Reserved</p>
     </footer>
-    <script>
-    document.querySelector("form").addEventListener("submit", function(event) {
-        event.preventDefault();
-        fetch(this.action, {
-            method: this.method,
-            body: new FormData(this),
-            headers: { 'Accept': 'application/json' }
-        }).then(response => {
-            if (response.ok) {
-                window.location.href = "terima-kasih.html";
-            }
-        }).catch(error => {
-            console.error('Terjadi kesalahan:', error);
-        });
-    });
-</script>
 </body>
 </html>
