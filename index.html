@@ -10,15 +10,36 @@
         header { background: #0055A4; color: white; text-align: center; padding: 20px; }
         nav { display: flex; justify-content: center; background: #003366; padding: 10px; }
         nav a { color: white; margin: 0 15px; text-decoration: none; }
-        .hero { text-align: center; padding: 60px 20px; background: URL ('A_landing_page_of_Cakrawala_Education_Agency\'s_web.png') no-repeat center; background-size: cover; color: white; }
+        .hero { text-align: center; padding: 60px 20px; background: url('A_landing_page_of_Cakrawala_Education_Agency\'s_web.png') no-repeat center; background-size: cover; color: white; }
         .hero h2 { font-size: 32px; margin-bottom: 10px; }
         .hero p { font-size: 18px; margin-bottom: 20px; }
         .button { background: #00BFFF; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; display: inline-block; font-weight: bold; }
         .container { padding: 40px 20px; text-align: center; }
         .container h2 { color: #003366; margin-bottom: 20px; }
-        .highlight-box { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 30px; }
-        .box { flex: 1 1 300px; border: 1px solid #ccc; border-radius: 10px; padding: 20px; background: #f9f9f9; }
-        .box i { font-size: 30px; margin-bottom: 10px; color: #0055A4; }
+        .highlight-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .box {
+            flex: 1 1 280px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            background: #f9f9f9;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .box:hover {
+            transform: translateY(-5px);
+        }
+        .box i {
+            font-size: 36px;
+            color: #0055A4;
+            margin-bottom: 10px;
+        }
         .testimonials { background: #f1f1f1; padding: 40px 20px; }
         .testimonials blockquote { font-style: italic; color: #333; margin: 20px auto; max-width: 600px; }
         .testimonials cite { display: block; margin-top: 10px; font-weight: bold; }
@@ -75,19 +96,29 @@
         <h2>Layanan Kami</h2>
         <div class="highlight-box">
             <div class="box">
-                <p>📌 Konsultasi Jurusan & Kampus</p>
+                <i class="fas fa-comments"></i>
+                <h3>Konsultasi Jurusan & Kampus</h3>
+                <p>Kami bantu memilih jurusan dan kampus yang sesuai minat, kemampuan, dan prospek masa depanmu di Selandia Baru.</p>
             </div>
             <div class="box">
-                <p>📌 Aplikasi ke Universitas & Language School</p>
+                <i class="fas fa-university"></i>
+                <h3>Aplikasi Universitas & Language School</h3>
+                <p>Pendaftaran ke berbagai institusi di NZ, lengkap dengan pengecekan dokumen dan pengiriman aplikasi.</p>
             </div>
             <div class="box">
-                <p>📌 Bimbingan Visa Pelajar & Visitor</p>
+                <i class="fas fa-passport"></i>
+                <h3>Bimbingan Visa Pelajar & Visitor</h3>
+                <p>Kami dampingi proses visa secara menyeluruh: checklist, pengisian form, dan persiapan wawancara (jika ada).</p>
             </div>
             <div class="box">
-                <p>📌 Persiapan Keberangkatan (Pre-Departure)</p>
+                <i class="fas fa-plane-departure"></i>
+                <h3>Persiapan Keberangkatan</h3>
+                <p>Briefing sebelum berangkat, termasuk simulasi imigrasi, tips hidup di NZ, hingga list barang yang perlu dibawa.</p>
             </div>
             <div class="box">
-                <p>📌 Paket Welcome Student di New Zealand</p>
+                <i class="fas fa-hands-helping"></i>
+                <h3>Paket Welcome Student</h3>
+                <p>Penjemputan bandara, bantuan akomodasi sementara, dan orientasi lokal untuk pelajar yang baru tiba di NZ.</p>
             </div>
         </div>
     </section>
