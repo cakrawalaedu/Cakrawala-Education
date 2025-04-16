@@ -10,17 +10,24 @@
         header { background: #0055A4; color: white; text-align: center; padding: 20px; }
         nav { display: flex; justify-content: center; background: #003366; padding: 10px; }
         nav a { color: white; margin: 0 15px; text-decoration: none; }
-        .hero { text-align: center; padding: 50px; background: url('A_high-resolution_digital_photograph_captures_a_un.png') no-repeat center; background-size: cover; color: white; }
-        .container { padding: 20px; text-align: center; }
-        .button { background: #0055A4; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; }
-        .footer { background: #003366; color: white; text-align: center; padding: 10px; margin-top: 20px; }
-        .image-container { text-align: center; margin: 20px 0; }
-        .image-container img { width: 80%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
+        .hero { text-align: center; padding: 60px 20px; background: url('A_landing_page_of_Cakrawala_Education_Agency\'s_web.png') no-repeat center; background-size: cover; color: white; }
+        .hero h2 { font-size: 32px; margin-bottom: 10px; }
+        .hero p { font-size: 18px; margin-bottom: 20px; }
+        .button { background: #00BFFF; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; display: inline-block; font-weight: bold; }
+        .container { padding: 40px 20px; text-align: center; }
+        .container h2 { color: #003366; margin-bottom: 20px; }
+        .highlight-box { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 30px; }
+        .box { flex: 1 1 300px; border: 1px solid #ccc; border-radius: 10px; padding: 20px; background: #f9f9f9; }
+        .box i { font-size: 30px; margin-bottom: 10px; color: #0055A4; }
+        .testimonials { background: #f1f1f1; padding: 40px 20px; }
+        .testimonials blockquote { font-style: italic; color: #333; margin: 20px auto; max-width: 600px; }
+        .testimonials cite { display: block; margin-top: 10px; font-weight: bold; }
         form { display: flex; flex-direction: column; align-items: center; }
-        input, textarea { width: 80%; padding: 10px; margin: 5px 0; border: 1px solid #ccc; border-radius: 5px; }
+        input, textarea { width: 80%; max-width: 500px; padding: 10px; margin: 5px 0; border: 1px solid #ccc; border-radius: 5px; }
         button { background: #0055A4; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
         .social-icons { margin-top: 20px; }
-        .social-icons a { color: white; font-size: 24px; margin: 0 10px; text-decoration: none; }
+        .social-icons a { color: #003366; font-size: 24px; margin: 0 10px; text-decoration: none; }
+        .footer { background: #003366; color: white; text-align: center; padding: 20px; }
     </style>
 </head>
 <body>
@@ -28,37 +35,80 @@
         <h1>Cakrawala Education Agency</h1>
         <p>Raih masa depan gemilang dengan pendidikan berkualitas dunia</p>
     </header>
-    
+
     <nav>
         <a href="#about">Tentang Kami</a>
         <a href="#services">Layanan</a>
+        <a href="#testimonials">Testimoni</a>
         <a href="#contact">Hubungi Kami</a>
     </nav>
-    
+
     <section class="hero">
-        <h2>Temukan Peluang Belajar di Selandia Baru</h2>
-        <p>Kami siap membantu setiap langkah perjalanan akademik Anda</p>
-        <a href="#contact" class="button">Konsultasi Gratis</a>
+        <h2>Raih Masa Depan Gemilang di Selandia Baru!</h2>
+        <p>Kami bantu wujudkan impian studimu ke luar negeri – dari konsultasi hingga keberangkatan.</p>
+        <a href="#contact" class="button">Jadwalkan Konsultasi Gratis</a>
     </section>
-    
+
     <section class="container" id="about">
-        <h2>Tentang Kami</h2>
-        <p>Cakrawala Education Agency adalah mitra terpercaya bagi pelajar Indonesia yang ingin melanjutkan pendidikan ke Selandia Baru. Kami menyediakan layanan konsultasi, bimbingan akademik, serta bantuan dalam proses aplikasi hingga keberangkatan.</p>
-        <div class="image-container">
-            <img src="A_high-resolution_digital_photograph_captures_a_un.png" alt="Kampus di Selandia Baru">
+        <h2>Mengapa Pilih Kami?</h2>
+        <div class="highlight-box">
+            <div class="box">
+                <i class="fas fa-map-marker-alt"></i>
+                <p><strong>Berbasis di New Zealand</strong><br>Informasi langsung dari alumni dan profesional yang tinggal di NZ.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-route"></i>
+                <p><strong>Proses A–Z Terarah</strong><br>Mulai dari pemilihan jurusan, pengurusan visa, hingga keberangkatan.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-user-friends"></i>
+                <p><strong>Support Intensif</strong><br>Dibimbing oleh tim yang responsif dan berpengalaman.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <p><strong>Partner Resmi Lembaga Pendidikan</strong><br>Bekerja sama dengan kampus ternama dan terpercaya.</p>
+            </div>
         </div>
     </section>
-    
+
     <section class="container" id="services">
         <h2>Layanan Kami</h2>
-        <p>✅ Konsultasi Pendidikan | ✅ Pengurusan Visa | ✅ Bantuan Akomodasi</p>
+        <div class="highlight-box">
+            <div class="box">
+                <p>📌 Konsultasi Jurusan & Kampus</p>
+            </div>
+            <div class="box">
+                <p>📌 Aplikasi ke Universitas & Language School</p>
+            </div>
+            <div class="box">
+                <p>📌 Bimbingan Visa Pelajar & Visitor</p>
+            </div>
+            <div class="box">
+                <p>📌 Persiapan Keberangkatan (Pre-Departure)</p>
+            </div>
+            <div class="box">
+                <p>📌 Paket Welcome Student di New Zealand</p>
+            </div>
+        </div>
     </section>
-    
+
+    <section class="testimonials" id="testimonials">
+        <h2>Testimoni Alumni</h2>
+        <blockquote>
+            "Cakrawala bantu saya sejak awal hingga tiba di Auckland. Semua terasa lebih mudah!"
+            <cite>– Intan, Student of University of Auckland</cite>
+        </blockquote>
+        <blockquote>
+            "Timnya sangat ramah dan sigap. Visa saya langsung approved berkat bimbingannya."
+            <cite>– Rafi, Diploma Student in Christchurch</cite>
+        </blockquote>
+    </section>
+
     <section class="container" id="contact">
         <h2>Hubungi Kami</h2>
         <p>Email: <a href="mailto:info@cakrawalaeducation.com">info@cakrawalaeducation.com</a></p>
         <p>WhatsApp: <a href="https://wa.me/6281234567890" target="_blank">+62 812-3456-7890</a></p>
-        
+
         <h3>Ikuti Kami</h3>
         <div class="social-icons">
             <a href="https://www.instagram.com/cakrawalaeducation" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -74,7 +124,7 @@
             <button type="submit">Kirim</button>
         </form>
     </section>
-    
+
     <footer class="footer">
         <p>&copy; 2025 Cakrawala Education Agency | All Rights Reserved</p>
     </footer>
