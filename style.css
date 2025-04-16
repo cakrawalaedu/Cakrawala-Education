@@ -1,0 +1,194 @@
+:root {
+    --biru-brand: #002C4C;
+    --emas-brand: #C39B4B;
+    --putih: #ffffff;
+    --abu-muda: #f8f8f8;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--putih);
+}
+
+header {
+    background: var(--biru-brand);
+    color: var(--putih);
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    height: 60px;
+    vertical-align: middle;
+}
+
+header h1 {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: var(--emas-brand);
+    padding: 10px;
+}
+
+nav a {
+    color: var(--biru-brand);
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: url('A_landing_page_of_Cakrawala_Education_Agency\'s_web.png') no-repeat center;
+    background-size: cover;
+    color: var(--putih);
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.button {
+    background: var(--emas-brand);
+    color: var(--biru-brand);
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background: #b28835;
+}
+
+.container {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.container h2 {
+    color: var(--biru-brand);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.highlight-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.box {
+    flex: 1 1 280px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background: var(--abu-muda);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+}
+
+.box i {
+    font-size: 36px;
+    color: var(--biru-brand);
+    margin-bottom: 10px;
+}
+
+.testimonials {
+    background: #f1f1f1;
+    padding: 40px 20px;
+}
+
+.testimonials h2 {
+    color: var(--biru-brand);
+}
+
+.testimonials blockquote {
+    font-style: italic;
+    color: #333;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.testimonials cite {
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    background: var(--biru-brand);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+    background: #001c32;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: var(--biru-brand);
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer {
+    background: var(--biru-brand);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer img {
+    height: 40px;
+    margin-top: 10px;
+}
