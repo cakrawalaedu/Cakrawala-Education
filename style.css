@@ -280,3 +280,51 @@ li {
     height: 30px;
   }
 }
+
+/* === Hamburger Menu untuk Mobile === */
+.nav-toggle {
+  display: none;
+  font-size: 24px;
+  color: var(--biru-brand);
+  cursor: pointer;
+}
+
+/* Style container link nav */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Responsive styling untuk layar kecil */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  .nav-toggle {
+    display: block;
+    margin-left: 20px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: var(--emas-brand);
+    padding: 10px 0;
+  }
+
+  .nav-links a {
+    padding: 10px 20px;
+    width: 100%;
+    text-align: left;
+    border-top: 1px solid rgba(0,0,0,0.1);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+}
