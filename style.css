@@ -54,19 +54,19 @@ nav a {
 }
 
 .hero-about {
-  background: url("tentang-hero.jpg") no-repeat center;
-  background-size: cover;
-  padding: 80px 20px;
-  color: white;
-  text-align: center;
+    background: url("tentang-hero.jpg") no-repeat center;
+    background-size: cover;
+    padding: 80px 20px;
+    color: white;
+    text-align: center;
 }
 
 .hero-nz {
-  background: url("kuliah-hero.jpg") no-repeat center;
-  background-size: cover;
-  padding: 80px 20px;
-  color: white;
-  text-align: center;
+    background: url("kuliah-hero.jpg") no-repeat center;
+    background-size: cover;
+    padding: 80px 20px;
+    color: white;
+    text-align: center;
 }
 
 .hero h2 {
@@ -210,13 +210,12 @@ button:hover {
 }
 
 ul {
-  list-style-position: inside;
-  padding-left: 0;
-  margin-left: 0;
+    list-style-position: inside;
+    padding-left: 0;
+    margin-left: 0;
 }
 
 li {
-  text-align: left;
-  margin-bottom: 8px;
+    text-align: left;
+    margin-bottom: 8px;
 }
-
