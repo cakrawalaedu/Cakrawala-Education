@@ -48,7 +48,7 @@ nav a {
 .hero {
     text-align: center;
     padding: 60px 20px;
-    background: url('Landing Page.png') no-repeat center;
+    background: url("Landing Page.png") no-repeat center;
     background-size: cover;
     color: var(--putih);
 }
