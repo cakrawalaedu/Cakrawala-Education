@@ -18,14 +18,18 @@
         <p>Raih masa depan gemilang dengan pendidikan berkualitas dunia</p>
     </header>
 
-  <nav>
-  <a href="index.html">Beranda</a>
-  <a href="tentang.html">Tentang Kami</a>
-  <a href="kuliah-nz.html">Kuliah di NZ</a>
-  <a href="program.html">Program</a>
-  <a href="kontak.html">Kontak</a>
+<nav>
+  <div class="nav-toggle" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Beranda</a>
+    <a href="tentang.html">Tentang Kami</a>
+    <a href="kuliah-nz.html">Kuliah di NZ</a>
+    <a href="program.html">Program</a>
+    <a href="kontak.html">Kontak</a>
+  </div>
 </nav>
-
 
     <section class="hero">
         <h2>Raih Masa Depan Gemilang di Selandia Baru!</h2>
@@ -123,5 +127,11 @@
         <p>&copy; 2025 Cakrawala Education Agency | All Rights Reserved</p>
         <img src="Logo Cakrawala.png" alt="Logo Cakrawala">
     </footer>
+    <script>
+  function toggleMenu() {
+    const nav = document.getElementById("navLinks");
+    nav.classList.toggle("show");
+  }
+</script>
 </body>
 </html>
