@@ -53,6 +53,14 @@ nav a {
     color: var(--putih);
 }
 
+.hero-about {
+  background: url("tentang-hero.jpg") no-repeat center;
+  background-size: cover;
+  padding: 80px 20px;
+  color: white;
+  text-align: center;
+}
+
 .hero-nz {
   background: url("kuliah-hero.jpg") no-repeat center;
   background-size: cover;
