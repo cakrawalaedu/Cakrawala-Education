@@ -208,3 +208,15 @@ button:hover {
     height: 40px;
     margin-top: 10px;
 }
+
+ul {
+  list-style-position: inside;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+li {
+  text-align: left;
+  margin-bottom: 8px;
+}
+
