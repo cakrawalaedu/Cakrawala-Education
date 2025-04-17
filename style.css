@@ -12,6 +12,17 @@ body {
     background: var(--putih);
 }
 
+.header-logo {
+  background: var(--putih);
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.header-logo img {
+  height: 70px;
+}
+
 header {
     background: var(--biru-brand);
     color: var(--putih);
