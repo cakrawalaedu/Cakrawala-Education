@@ -229,3 +229,54 @@ li {
     text-align: center;
     margin-bottom: 8px;
 }
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .container {
+    padding: 20px 15px;
+  }
+
+  .highlight-box {
+    flex-direction: column;
+  }
+
+  .box {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+
+  .hero h2 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  input, textarea, input#programFilter {
+    width: 100%;
+  }
+
+  nav a {
+    margin: 5px 0;
+  }
+
+  .button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  footer img {
+    height: 30px;
+  }
+}
