@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Program & Kampus | Cakrawala Education Agency</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ae943c6289.js" crossorigin="anonymous"></script>
+  <script>
+    function filterPrograms() {
+      const input = document.getElementById('programFilter').value.toLowerCase();
+      const items = document.querySelectorAll('#programList li');
+      items.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        item.style.display = text.includes(input) ? 'list-item' : 'none';
+      });
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <img src="Logo Cakrawala.png" alt="Logo Cakrawala">
+    <h1>Cakrawala Education Agency</h1>
+    <p>Raih masa depan gemilang dengan pendidikan berkualitas dunia</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="tentang.html">Tentang Kami</a>
+    <a href="kuliah-nz.html">Kuliah di NZ</a>
+    <a href="program.html">Program</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+
+  <section class="hero hero-program">
+    <h2>Daftar Program & Kampus</h2>
+    <p>Temukan pilihan universitas dan program studi yang sesuai dengan tujuanmu.</p>
+  </section>
+
+  <section class="container">
+    <h3>Kampus Rekanan</h3>
+   <div class="highlight-box">
+      <div class="box">
+        <img src="ais-logo.png" alt="Auckland Institute of Studies" style="max-height: 50px; margin-bottom: 10px;">
+        <h4>Auckland Institute of Studies (AIS)</h4>
+        <p>Program unggulan: Business, Tourism, Hospitality, IT, English Language.</p>
+      </div>
+      <div class="box">
+        <img src="yoobee-logo.png" alt="Yoobee Colleges" style="max-height: 50px; margin-bottom: 10px;">
+        <h4>Yoobee Colleges</h4>
+        <p>Program unggulan: Animation, Digital Design, Film, Business Informatics.</p>
+      </div>
+      <div class="box">
+        <img src="whitecliffe-logo.png" alt="Whitecliffe College" style="max-height: 50px; margin-bottom: 10px;">
+        <h4>Whitecliffe College</h4>
+        <p>Program unggulan: Fine Arts, Design, IT, Fashion, Art Therapy.</p>
+      </div>
+      <div class="box">
+        <img src="icl-logo.png" alt="ICL Education Group" style="max-height: 50px; margin-bottom: 10px;">
+        <h4>ICL Education Group</h4>
+        <p>Program unggulan: Business, Informatics, Early Childhood Education, English.</p>
+      </div>
+    </div>
+
+    <h3>Kampus Mitra Lainnya</h3>
+      <div class="highlight-box">
+      <div class="box">
+        <img src="uoa-logo.png" alt="University of Auckland" style="max-height: 50px; margin-bottom: 10px;">
+        <h4>University of Auckland</h4>
+        <p>Ranking tertinggi di NZ, unggul dalam Business, IT, dan Engineering.</p>
+      </div>
+      <div class="box">
+        <img src="victoria-logo.png" alt="Victoria University of Wellington" style="max-height: 50px; margin-bottom: 10px;">
+        <h4>Victoria University of Wellington</h4>
+        <p>Terkenal untuk Law, Political Science, dan Creative Writing.</p>
+      </div>
+      <div class="box">
+        <img src="otago-logo.png" alt="University of Otago" style="max-height: 50px; margin-bottom: 10px;">
+        <h4>University of Otago</h4>
+        <p>Spesialis di bidang Health Science, Medicine, dan Research.</p>
+      </div>
+    </div>
+
+    <h3>Program yang Tersedia</h3>
+    <input type="text" id="programFilter" placeholder="Cari program..." onkeyup="filterPrograms()" style="padding: 10px; width: 100%; max-width: 400px; margin-bottom: 20px;">
+    <ul id="programList">
+      <li>Business & Management</li>
+      <li>Information Technology</li>
+      <li>Health Science & Nursing</li>
+      <li>Engineering & Applied Sciences</li>
+      <li>Education & Early Childhood</li>
+      <li>Creative Arts, Film, & Media</li>
+      <li>English Language & Pathway Program</li>
+    </ul>
+
+    <p>Jika kamu belum yakin memilih jurusan, tim kami siap membantu mencocokkan program dengan minat dan tujuan kariermu.</p>
+    <a href="kontak.html" class="button">Konsultasi Gratis Sekarang</a>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Cakrawala Education Agency | All Rights Reserved</p>
+    <img src="Logo Cakrawala.png" alt="Logo Cakrawala">
+  </footer>
+</body>
+</html>
