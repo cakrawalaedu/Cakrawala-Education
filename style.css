@@ -211,11 +211,11 @@ button:hover {
 
 ul {
     list-style-position: inside;
-    padding-left: 0;
-    margin-left: 0;
+    padding-center: 0;
+    margin-center: 0;
 }
 
 li {
-    text-align: left;
+    text-align: center;
     margin-bottom: 8px;
 }
