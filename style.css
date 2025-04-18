@@ -1,341 +1,282 @@
 :root {
---biru-brand: #002C4C;
---emas-brand: #C39B4B;
---putih: #ffffff;
---abu-muda: #f8f8f8;
-}
-
-body {
-font-family: 'Poppins', sans-serif;
-margin: 0;
-padding: 0;
-background: var(--putih);
-}
-
-.header-logo {
-  background: var(--putih);
-  text-align: center;
-  padding: 10px 0;
-  border-bottom: 1px solid #eee;
-}
-
-.header-logo img {
-  height: 70px;
-}
-
-header {
-background: var(--biru-brand);
-color: var(--putih);
-text-align: center;
-padding: 20px;
-}
-
-header img {
-height: 60px;
-vertical-align: middle;
-}
-
-header h1 {
-display: inline-block;
-margin-left: 10px;
-vertical-align: middle;
-font-size: 28px;
-}
-
-nav {
-position: sticky;
-top: 0;
-z-index: 999;
-display: flex;
-justify-content: center;
-background: var(--emas-brand);
-padding: 10px;
-box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
-}
-
-nav a {
-color: var(--biru-brand);
-margin: 0 15px;
-text-decoration: none;
-font-weight: 600;
-}
-
-.hero {
-text-align: center;
-padding: 60px 20px;
-background: url("Landing Page.png") no-repeat center;
-background-size: cover;
-color: var(--putih);
-}
-
-.hero-about {
-background: url("tentang-hero.jpg") no-repeat center;
-background-size: cover;
-padding: 80px 20px;
-color: white;
-text-align: center;
-}
-
-.hero-nz {
-background: url("kuliah-hero.jpg") no-repeat center;
-background-size: cover;
-padding: 80px 20px;
-color: white;
-text-align: center;
-}
-.hero-program {
-background: url("program-hero.jpg") no-repeat center;
-background-size: cover;
-padding: 80px 20px;
-color: white;
-text-align: center;
-}
-.hero h2 {
-font-size: 32px;
-margin-bottom: 10px;
-}
-
-.hero p {
-font-size: 18px;
-margin-bottom: 20px;
-}
-
-.button {
-background: var(--emas-brand);
-color: var(--biru-brand);
-padding: 12px 24px;
-text-decoration: none;
-border-radius: 8px;
-display: inline-block;
-font-weight: 600;
-transition: background 0.3s ease;
-}
-
-.button:hover {
-background: #b28835;
-}
-
-.container {
-padding: 40px 20px;
-text-align: center;
-}
-
-.container h2 {
-color: var(--biru-brand);
-margin-bottom: 20px;
-font-weight: 700;
-}
-
-.highlight-box {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-gap: 30px;
-margin-top: 30px;
-}
-
-.box {
-flex: 1 1 280px;
-border: 1px solid #ccc;
-border-radius: 10px;
-padding: 20px;
-background: var(--abu-muda);
-box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-transition: transform 0.3s ease;
-}
-
-.box:hover {
-transform: translateY(-5px);
-}
-
-.box i {
-font-size: 36px;
-color: var(--biru-brand);
-margin-bottom: 10px;
-}
-
-.testimonials {
-background: #f1f1f1;
-padding: 40px 20px;
-}
-
-.testimonials h2 {
-color: var(--biru-brand);
-}
-
-.testimonials blockquote {
-font-style: italic;
-color: #333;
-margin: 20px auto;
-max-width: 600px;
-}
-
-.testimonials cite {
-display: block;
-margin-top: 10px;
-font-weight: 600;
-}
-
-form {
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-
-input, textarea {
-width: 80%;
-max-width: 500px;
-padding: 10px;
-margin: 5px 0;
-border: 1px solid #ccc;
-border-radius: 5px;
-font-family: 'Poppins', sans-serif;
-}
-
-button {
-background: var(--biru-brand);
-color: white;
-padding: 10px 20px;
-border: none;
-border-radius: 5px;
-cursor: pointer;
-transition: background 0.3s ease;
-font-family: 'Poppins', sans-serif;
-}
-
-button:hover {
-background: #001c32;
-}
-
-.social-icons {
-margin-top: 20px;
-}
-
-.social-icons a {
-color: var(--biru-brand);
-font-size: 24px;
-margin: 0 10px;
-text-decoration: none;
-}
-
-.footer {
-background: var(--biru-brand);
-color: white;
-text-align: center;
-padding: 20px;
-}
-
-.footer img {
-height: 40px;
-margin-top: 10px;
-}
-
-ul {
-list-style-position: inside;
-padding-center: 0;
-margin-center: 0;
-}
-
-li {
-text-align: center;
-margin-bottom: 8px;
-}
-
-@media screen and (max-width: 768px) {
-nav {
-flex-direction: column;
-align-items: center;
-gap: 10px;
-text-align: center;
-}
-
-.container {
-padding: 20px 15px;
-}
-
-.highlight-box {
-flex-direction: column;
-}
-
-.box {
-flex: 1 1 100%;
-margin-bottom: 20px;
-}
-
-.hero h2 {
-font-size: 24px;
-}
-
-.hero p {
-font-size: 16px;
-}
-
-header h1 {
-font-size: 20px;
-}
-
-input, textarea, input#programFilter {
-width: 100%;
-}
-
-nav a {
-margin: 5px 0;
-}
-
-.button {
-width: 100%;
-max-width: 300px;
-}
-
-footer img {
-height: 30px;
-}
-}
-
-/* === Hamburger Menu untuk Mobile === */
-.nav-toggle {
-display: none;
-font-size: 24px;
-color: var(--biru-brand);
-cursor: pointer;
-}
-
-/* Style container link nav */
-.nav-links {
-display: flex;
-justify-content: center;
-gap: 20px;
-}
-
-/* Responsive styling untuk layar kecil */
-@media screen and (max-width: 768px) {
-nav {
-flex-direction: column;
-align-items: flex-start;
-position: relative;
-}
-
-.nav-toggle {
-display: block;
-margin-left: 20px;
-}
-
-.nav-links {
-display: none;
-flex-direction: column;
-width: 100%;
-background: var(--emas-brand);
-padding: 10px 0;
-}
-
-.nav-links a {
-padding: 10px 20px;
-width: 100%;
-text-align: left;
-border-top: 1px solid rgba(0,0,0,0.1);
-}
-
-.nav-links.show {
-display: flex;
-}
-}
+     --biru-brand: #002C4C;
+     --emas-brand: #C39B4B;
+     --putih: #ffffff;
+     --abu-muda: #f8f8f8;
+ }
+ 
+ body {
+     font-family: 'Poppins', sans-serif;
+     margin: 0;
+     padding: 0;
+     background: var(--putih);
+ }
+ 
+ header {
+     background: var(--biru-brand);
+     color: var(--putih);
+     text-align: center;
+     padding: 20px;
+ }
+ 
+ header img {
+     height: 60px;
+     vertical-align: middle;
+ }
+ 
+ header h1 {
+     display: inline-block;
+     margin-left: 10px;
+     vertical-align: middle;
+     font-size: 28px;
+ }
+ 
+ nav {
+   position: sticky;
+   top: 0;
+   z-index: 999;
+   display: flex;
+   justify-content: center;
+   background: var(--emas-brand);
+   padding: 10px;
+   box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+ }
+ 
+ nav a {
+     color: var(--biru-brand);
+     margin: 0 15px;
+     text-decoration: none;
+     font-weight: 600;
+ }
+ 
+ .hero {
+     text-align: center;
+     padding: 60px 20px;
+     background: url("Landing Page.png") no-repeat center;
+     background-size: cover;
+     color: var(--putih);
+ }
+ 
+ .hero-about {
+     background: url("tentang-hero.jpg") no-repeat center;
+     background-size: cover;
+     padding: 80px 20px;
+     color: white;
+     text-align: center;
+ }
+ 
+ .hero-nz {
+     background: url("kuliah-hero.jpg") no-repeat center;
+     background-size: cover;
+     padding: 80px 20px;
+     color: white;
+     text-align: center;
+ }
+ .hero-program {
+     background: url("program-hero.jpg") no-repeat center;
+     background-size: cover;
+     padding: 80px 20px;
+     color: white;
+     text-align: center;
+ }
+ .hero h2 {
+     font-size: 32px;
+     margin-bottom: 10px;
+ }
+ 
+ .hero p {
+     font-size: 18px;
+     margin-bottom: 20px;
+ }
+ 
+ .button {
+     background: var(--emas-brand);
+     color: var(--biru-brand);
+     padding: 12px 24px;
+     text-decoration: none;
+     border-radius: 8px;
+     display: inline-block;
+     font-weight: 600;
+     transition: background 0.3s ease;
+ }
+ 
+ .button:hover {
+     background: #b28835;
+ }
+ 
+ .container {
+     padding: 40px 20px;
+     text-align: center;
+ }
+ 
+ .container h2 {
+     color: var(--biru-brand);
+     margin-bottom: 20px;
+     font-weight: 700;
+ }
+ 
+ .highlight-box {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 30px;
+     margin-top: 30px;
+ }
+ 
+ .box {
+     flex: 1 1 280px;
+     border: 1px solid #ccc;
+     border-radius: 10px;
+     padding: 20px;
+     background: var(--abu-muda);
+     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+     transition: transform 0.3s ease;
+ }
+ 
+ .box:hover {
+     transform: translateY(-5px);
+ }
+ 
+ .box i {
+     font-size: 36px;
+     color: var(--biru-brand);
+     margin-bottom: 10px;
+ }
+ 
+ .testimonials {
+     background: #f1f1f1;
+     padding: 40px 20px;
+ }
+ 
+ .testimonials h2 {
+     color: var(--biru-brand);
+ }
+ 
+ .testimonials blockquote {
+     font-style: italic;
+     color: #333;
+     margin: 20px auto;
+     max-width: 600px;
+ }
+ 
+ .testimonials cite {
+     display: block;
+     margin-top: 10px;
+     font-weight: 600;
+ }
+ 
+ form {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ 
+ input, textarea {
+     width: 80%;
+     max-width: 500px;
+     padding: 10px;
+     margin: 5px 0;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     font-family: 'Poppins', sans-serif;
+ }
+ 
+ button {
+     background: var(--biru-brand);
+     color: white;
+     padding: 10px 20px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: background 0.3s ease;
+     font-family: 'Poppins', sans-serif;
+ }
+ 
+ button:hover {
+     background: #001c32;
+ }
+ 
+ .social-icons {
+     margin-top: 20px;
+ }
+ 
+ .social-icons a {
+     color: var(--biru-brand);
+     font-size: 24px;
+     margin: 0 10px;
+     text-decoration: none;
+ }
+ 
+ .footer {
+     background: var(--biru-brand);
+     color: white;
+     text-align: center;
+     padding: 20px;
+ }
+ 
+ .footer img {
+     height: 40px;
+     margin-top: 10px;
+ }
+ 
+ ul {
+     list-style-position: inside;
+     padding-center: 0;
+     margin-center: 0;
+ }
+ 
+ li {
+     text-align: center;
+     margin-bottom: 8px;
+ }
+ 
+ @media screen and (max-width: 768px) {
+   nav {
+     flex-direction: column;
+     align-items: center;
+     gap: 10px;
+     text-align: center;
+   }
+ 
+   .container {
+     padding: 20px 15px;
+   }
+ 
+   .highlight-box {
+     flex-direction: column;
+   }
+ 
+   .box {
+     flex: 1 1 100%;
+     margin-bottom: 20px;
+   }
+ 
+   .hero h2 {
+     font-size: 24px;
+   }
+ 
+   .hero p {
+     font-size: 16px;
+   }
+ 
+   header h1 {
+     font-size: 20px;
+   }
+ 
+   input, textarea, input#programFilter {
+     width: 100%;
+   }
+ 
+   nav a {
+     margin: 5px 0;
+   }
+ 
+   .button {
+     width: 100%;
+     max-width: 300px;
+   }
+ 
+   footer img {
+     height: 30px;
+   }
+ }
