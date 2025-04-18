@@ -13,49 +13,43 @@ body {
 }
 
 .header-logo {
-  background: var(--putih);
-  text-align: center;
-  padding: 10px 0;
-  border-bottom: 1px solid #eee;
+    background: var(--putih);
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
 }
 
 .header-logo img {
-  height: 70px;
-}
-
-header {
-    background: var(--biru-brand);
-    color: var(--putih);
-    text-align: center;
-    padding: 20px;
-}
-
-header img {
-    height: 60px;
-    vertical-align: middle;
-}
-
-header h1 {
-    display: inline-block;
-    margin-left: 10px;
-    vertical-align: middle;
-    font-size: 28px;
+    height: 70px;
 }
 
 nav {
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  display: flex;
-  justify-content: center;
-  background: var(--emas-brand);
-  padding: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    background: var(--emas-brand);
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-nav a {
+.nav-toggle {
+    display: none;
+    font-size: 24px;
     color: var(--biru-brand);
-    margin: 0 15px;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a,
+.nav-links a {
+    color: var(--biru-brand);
     text-decoration: none;
     font-weight: 600;
 }
@@ -83,6 +77,7 @@ nav a {
     color: white;
     text-align: center;
 }
+
 .hero-program {
     background: url("program-hero.jpg") no-repeat center;
     background-size: cover;
@@ -90,6 +85,7 @@ nav a {
     color: white;
     text-align: center;
 }
+
 .hero h2 {
     font-size: 32px;
     margin-bottom: 10px;
@@ -207,6 +203,17 @@ button:hover {
     background: #001c32;
 }
 
+input#programFilter {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
 .social-icons {
     margin-top: 20px;
 }
@@ -232,8 +239,8 @@ button:hover {
 
 ul {
     list-style-position: inside;
-    padding-center: 0;
-    margin-center: 0;
+    padding-left: 0;
+    margin-left: 0;
 }
 
 li {
@@ -241,101 +248,68 @@ li {
     margin-bottom: 8px;
 }
 
+/* Responsive */
 @media screen and (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    text-align: center;
-  }
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-  .container {
-    padding: 20px 15px;
-  }
+    .nav-toggle {
+        display: block;
+        margin-left: 20px;
+    }
 
-  .highlight-box {
-    flex-direction: column;
-  }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: var(--emas-brand);
+        padding: 10px 0;
+    }
 
-  .box {
-    flex: 1 1 100%;
-    margin-bottom: 20px;
-  }
+    .nav-links.show {
+        display: flex;
+    }
 
-  .hero h2 {
-    font-size: 24px;
-  }
+    .nav-links a {
+        padding: 10px 20px;
+        width: 100%;
+        text-align: left;
+        border-top: 1px solid rgba(0,0,0,0.1);
+    }
 
-  .hero p {
-    font-size: 16px;
-  }
+    .container {
+        padding: 20px 15px;
+    }
 
-  header h1 {
-    font-size: 20px;
-  }
+    .highlight-box {
+        flex-direction: column;
+    }
 
-  input, textarea, input#programFilter {
-    width: 100%;
-  }
+    .box {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
 
-  nav a {
-    margin: 5px 0;
-  }
+    .hero h2 {
+        font-size: 24px;
+    }
 
-  .button {
-    width: 100%;
-    max-width: 300px;
-  }
+    .hero p {
+        font-size: 16px;
+    }
 
-  footer img {
-    height: 30px;
-  }
-}
+    input, textarea, input#programFilter {
+        width: 100%;
+    }
 
-/* === Hamburger Menu untuk Mobile === */
-.nav-toggle {
-  display: none;
-  font-size: 24px;
-  color: var(--biru-brand);
-  cursor: pointer;
-}
+    .button {
+        width: 100%;
+        max-width: 300px;
+    }
 
-/* Style container link nav */
-.nav-links {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-/* Responsive styling untuk layar kecil */
-@media screen and (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative;
-  }
-
-  .nav-toggle {
-    display: block;
-    margin-left: 20px;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background: var(--emas-brand);
-    padding: 10px 0;
-  }
-
-  .nav-links a {
-    padding: 10px 20px;
-    width: 100%;
-    text-align: left;
-    border-top: 1px solid rgba(0,0,0,0.1);
-  }
-
-  .nav-links.show {
-    display: flex;
-  }
+    footer img {
+        height: 30px;
+    }
 }
